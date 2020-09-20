@@ -7,5 +7,7 @@ namespace Nviromon.Data
     {
         public DataService(DbContextOptions<DataService> options) : base(options) {}
         public DbSet<Readings> Readings { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }
